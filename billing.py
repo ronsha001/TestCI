@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/health')
 def health():
-  return Response("OK from billing", status=200)
+  return Response("OK from billing!!", status=200)
 
 
 if __name__ == '__main__':
