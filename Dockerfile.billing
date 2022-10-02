@@ -2,11 +2,11 @@ FROM python:3.10.4
 
 WORKDIR /app
 
-COPY ./testCI/requirements.txt .
+COPY ./TestCI/requirements.txt .
 RUN pip3 install -r requirements.txt
 
 COPY . .
 
-RUN chmod +x billing.py
-ENTRYPOINT ["python3", "billing.py"]
+RUN chmod +x ./TestCIbilling.py
+ENTRYPOINT ["python3", "./TestCI/billing.py"]
 
