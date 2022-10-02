@@ -7,6 +7,6 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
-RUN chmod +x ./TestCIbilling.py
+RUN chmod +x ./TestCI/billing.py
 ENTRYPOINT ["python3", "./TestCI/billing.py"]
 
