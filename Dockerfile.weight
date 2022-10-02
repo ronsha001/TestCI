@@ -10,5 +10,5 @@ COPY . .
 
 RUN chmod +x weight.py
 
-ENTRYPOINT["python3", "weight.py"]
+ENTRYPOINT ["python3", "weight.py"]
 
